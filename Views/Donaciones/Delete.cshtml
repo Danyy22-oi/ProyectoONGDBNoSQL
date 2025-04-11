@@ -1,0 +1,37 @@
+@model ProyectoONGDBNoSQL.Models.Donacion
+
+@{
+    ViewData["Title"] = "Eliminar Donación";
+}
+
+<h2>Eliminar Donación</h2>
+
+<h4>¿Está seguro de que desea eliminar esta donación?</h4>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-2">Donante</dt>
+    <dd class="col-sm-10">@Model.DonanteId</dd>
+
+    <dt class="col-sm-2">Fecha</dt>
+    <dd class="col-sm-10">@Model.FechaDonacion.ToShortDateString()</dd>
+
+    <dt class="col-sm-2">Tipo</dt>
+    <dd class="col-sm-10">@Model.Tipo</dd>
+
+    <dt class="col-sm-2">Detalle</dt>
+    <dd class="col-sm-10">@Model.Detalle</dd>
+
+    <dt class="col-sm-2">Estado</dt>
+    <dd class="col-sm-10">@Model.Estado</dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

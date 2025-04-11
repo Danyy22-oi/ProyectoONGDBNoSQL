@@ -1,0 +1,41 @@
+@model IEnumerable<ProyectoONGDBNoSQL.Models.Donacion>
+
+    @{
+    ViewData["Title"] = "Donaciones";
+    }
+
+    <h2>Lista de Donaciones</h2>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Crear Donación</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Donante</th>
+                <th>Fecha</th>
+                <th>Tipo</th>
+                <th>Detalle</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var donacion in Model)
+        {
+            <tr>
+                <td>@donacion.DonanteId</td>
+                <td>@donacion.FechaDonacion.ToShortDateString()</td>
+                <td>@donacion.Tipo</td>
+                <td>@donacion.Detalle</td>
+                <td>@donacion.Estado</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@donacion.Id">Detalles</a> |
+                    <a asp-action="Edit" asp-route-id="@donacion.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@donacion.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>

@@ -1,0 +1,35 @@
+@model IEnumerable<ProyectoONGDBNoSQL.Models.Donante>
+
+    @{
+    ViewData["Title"] = "Donantes";
+    }
+
+    <h2>Lista de Donantes</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo de Donante</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var donante in Model)
+    {
+            <tr>
+                <td>@donante.Nombre</td>
+                <td>@donante.TipoDonante</td>
+                <td>@donante.Contacto.Email</td>
+                <td>@donante.Contacto.Telefono</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@donante.Id">Detalles</a> |
+                    <a asp-action="Edit" asp-route-id="@donante.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@donante.Id">Eliminar</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>

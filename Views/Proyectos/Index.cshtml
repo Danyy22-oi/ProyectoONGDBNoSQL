@@ -1,0 +1,54 @@
+@model IEnumerable<ProyectoONGDBNoSQL.Models.Proyecto>
+
+    @{
+    ViewData["Title"] = "Proyectos";
+    }
+
+    <h2>Lista de Proyectos</h2>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Crear Proyecto</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre del Proyecto</th>
+                <th>Tipo de Crisis</th>
+                <th>Fecha Inicio</th>
+                <th>Fecha Fin</th>
+                <th>Estado</th>
+                <th>Descripción</th>
+                <th>Voluntarios Asignados</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var proyecto in Model)
+    {
+            <tr>
+                <td>@proyecto.NombreProyecto</td>
+                <td>@proyecto.TipoCrisis</td>
+                <td>@proyecto.FechaInicio.ToShortDateString()</td>
+                <td>@(proyecto.FechaFin.HasValue ? proyecto.FechaFin.Value.ToShortDateString() : "")</td>
+                <td>@proyecto.Estado</td>
+                <td>@proyecto.Descripcion</td>
+                <td>
+                    @if (proyecto.VoluntariosAsignados != null && proyecto.VoluntariosAsignados.Any())
+                {
+                    @string.Join(", ", proyecto.VoluntariosAsignados)
+                }
+                else
+                {
+                    <em>Ninguno</em>
+                }
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@proyecto.Id">Detalles</a> |
+                    <a asp-action="Edit" asp-route-id="@proyecto.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@proyecto.Id">Eliminar</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>

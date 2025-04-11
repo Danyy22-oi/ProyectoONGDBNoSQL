@@ -1,0 +1,39 @@
+@model IEnumerable<ProyectoONGDBNoSQL.Models.Voluntario>
+
+    @{
+    ViewData["Title"] = "Voluntarios - Lista";
+    }
+
+    <h2>Lista de Voluntarios</h2>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Crear nuevo voluntario</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Usuario (ID)</th>
+                <th>Habilidades</th>
+                <th>Disponibilidad</th>
+                <th>Historial de Proyectos</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var voluntario in Model)
+    {
+            <tr>
+                <td>@voluntario.InfoUsuarioId</td>
+                <td>@string.Join(", ", voluntario.Habilidades ?? new List<string>())</td>
+                <td>@voluntario.Disponibilidad</td>
+                <td>@string.Join(", ", voluntario.HistorialProyectos ?? new List<string>())</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@voluntario.Id">Detalles</a> |
+                    <a asp-action="Edit" asp-route-id="@voluntario.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@voluntario.Id">Eliminar</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>

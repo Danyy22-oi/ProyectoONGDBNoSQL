@@ -1,0 +1,46 @@
+@model ProyectoONGDBNoSQL.Models.Proyecto
+
+@{
+    ViewData["Title"] = "Detalles del Proyecto";
+}
+
+<h2>Detalles del Proyecto</h2>
+
+<dl class="row">
+    <dt class="col-sm-2">Nombre del Proyecto</dt>
+    <dd class="col-sm-10">@Model.NombreProyecto</dd>
+
+    <dt class="col-sm-2">Tipo de Crisis</dt>
+    <dd class="col-sm-10">@Model.TipoCrisis</dd>
+
+    <dt class="col-sm-2">Fecha de Inicio</dt>
+    <dd class="col-sm-10">@Model.FechaInicio.ToShortDateString()</dd>
+
+    <dt class="col-sm-2">Fecha de Fin</dt>
+    <dd class="col-sm-10">
+        @(Model.FechaFin.HasValue ? Model.FechaFin.Value.ToShortDateString() : "Sin finalizar")
+    </dd>
+
+    <dt class="col-sm-2">Estado</dt>
+    <dd class="col-sm-10">@Model.Estado</dd>
+
+    <dt class="col-sm-2">Descripción</dt>
+    <dd class="col-sm-10">@Model.Descripcion</dd>
+
+    <dt class="col-sm-2">Voluntarios Asignados</dt>
+    <dd class="col-sm-10">
+        @if (Model.VoluntariosAsignados != null && Model.VoluntariosAsignados.Any())
+        {
+        @string.Join(", ", Model.VoluntariosAsignados)
+        }
+        else
+        {
+        <em>Ninguno</em>
+        }
+    </dd>
+</dl>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</p>

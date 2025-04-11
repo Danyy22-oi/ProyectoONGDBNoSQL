@@ -1,0 +1,51 @@
+@model ProyectoONGDBNoSQL.Models.Voluntario
+
+@{
+    ViewData["Title"] = "Detalles del voluntario";
+}
+
+<h2>Detalles del Voluntario</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Id
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Id
+        </dd>
+
+        <dt class="col-sm-2">
+            Usuario (ID)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.InfoUsuarioId
+        </dd>
+
+        <dt class="col-sm-2">
+            Habilidades
+        </dt>
+        <dd class="col-sm-10">
+            @string.Join(", ", Model.Habilidades ?? new List<string>())
+        </dd>
+
+        <dt class="col-sm-2">
+            Disponibilidad
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Disponibilidad
+        </dd>
+
+        <dt class="col-sm-2">
+            Historial de Proyectos
+        </dt>
+        <dd class="col-sm-10">
+            @string.Join(", ", Model.HistorialProyectos ?? new List<string>())
+        </dd>
+    </dl>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</p>

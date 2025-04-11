@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProyectoONG\\ProyectoONG.csproj": {}
+    "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\ProyectoONG.csproj": {}
   },
   "projects": {
-    "C:\\ProyectoONG\\ProyectoONG.csproj": {
+    "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\ProyectoONG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProyectoONG\\ProyectoONG.csproj",
+        "projectUniqueName": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\ProyectoONG.csproj",
         "projectName": "ProyectoONG",
-        "projectPath": "C:\\ProyectoONG\\ProyectoONG.csproj",
-        "packagesPath": "C:\\Users\\tdani\\.nuget\\packages\\",
-        "outputPath": "C:\\ProyectoONG\\obj\\",
+        "projectPath": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\ProyectoONG.csproj",
+        "packagesPath": "C:\\Users\\fabar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tdani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fabar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,6 +49,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
