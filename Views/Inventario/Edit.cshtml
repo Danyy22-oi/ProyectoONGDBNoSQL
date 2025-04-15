@@ -1,0 +1,30 @@
+@model ONG.Models.Inventario
+
+@{
+    ViewData["Title"] = "Editar Inventario";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="IdInventario" />
+
+    <div class="form-group">
+        <label asp-for="IdRecurso"></label>
+        <input asp-for="IdRecurso" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CantidadDisponible"></label>
+        <input asp-for="CantidadDisponible" class="form-control" type="number" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ubicacion"></label>
+        <input asp-for="Ubicacion" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

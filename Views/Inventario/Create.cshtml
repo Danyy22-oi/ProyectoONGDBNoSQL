@@ -1,0 +1,52 @@
+@model ONG.Models.Inventario
+
+@{
+    var recursosJson = ViewBag.RecursosJson as string;
+}
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="nombreRecurso">Nombre del recurso</label>
+        <select id="nombreRecurso" class="form-control" onchange="actualizarIdRecurso()">
+            <option value="">Seleccione un recurso</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="IdRecurso"></label>
+        <input asp-for="IdRecurso" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CantidadDisponible"></label>
+        <input asp-for="CantidadDisponible" class="form-control" type="number" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ubicacion"></label>
+        <input asp-for="Ubicacion" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+</form>
+
+@section Scripts {
+    <script>
+        const recursos = @Html.Raw(recursosJson);
+
+        const nombreSelect = document.getElementById("nombreRecurso");
+        const idInput = document.getElementById("IdRecurso");
+
+        // Llenar opciones del dropdown
+        recursos.forEach(r => {
+            let opt = document.createElement("option");
+            opt.value = r.IdRecurso;
+            opt.textContent = r.NombreRecurso;
+            nombreSelect.appendChild(opt);
+        });
+
+        function actualizarIdRecurso() {
+            idInput.value = nombreSelect.value;
+        }
+    </script>
+}

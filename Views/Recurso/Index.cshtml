@@ -1,0 +1,34 @@
+@model List<ONG.Models.Recurso>
+
+@{
+    ViewData["Title"] = "Lista de Recursos";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<a class="btn btn-primary mb-3" asp-action="Create">Agregar Recurso</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Unidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreRecurso</td>
+                <td>@item.Tipo</td>
+                <td>@item.UnidadMedida</td>
+                <td>
+                    <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.IdRecurso">Editar</a>
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.IdRecurso">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

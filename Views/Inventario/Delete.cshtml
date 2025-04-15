@@ -1,0 +1,20 @@
+@model ONG.Models.Inventario
+
+@{
+    ViewData["Title"] = "Eliminar Inventario";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>¿Está seguro que desea eliminar este registro?</h4>
+<div>
+    <strong>Recurso:</strong> @Model.IdRecurso <br />
+    <strong>Cantidad:</strong> @Model.CantidadDisponible <br />
+    <strong>Ubicación:</strong> @Model.Ubicacion <br />
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="IdInventario" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

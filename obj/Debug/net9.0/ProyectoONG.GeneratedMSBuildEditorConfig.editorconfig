@@ -9,117 +9,149 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoONG
 build_property.RootNamespace = ProyectoONG
-build_property.ProjectDir = C:\Users\fabar\ProyectoONGDBNoSQL\
+build_property.ProjectDir = C:\ProyectoONGDBNoSQL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\fabar\ProyectoONGDBNoSQL
+build_property.MSBuildProjectDirectory = C:\ProyectoONGDBNoSQL
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donaciones/Create.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donaciones/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donaciones/Delete.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donaciones/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donaciones/Details.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donaciones/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donaciones/Edit.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donaciones/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donaciones/Index.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donaciones/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donantes/Delete.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donantes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donantes/Details.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donantes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donantes/Edit.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donantes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Donantes/Index.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Donantes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Home/Index.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Home/Privacy.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Proyectos/Create.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Inventario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Inventario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Inventario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Inventario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Proyectos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Proyectos/Delete.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Proyectos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Proyectos/Details.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Proyectos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Proyectos/Edit.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Proyectos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Proyectos/Index.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Proyectos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Shared/Error.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Recurso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Recurso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Recurso/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Recurso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoONGDBNoSQL/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Voluntarios/Create.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Voluntarios/Delete.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Voluntarios/Details.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Voluntarios/Edit.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Voluntarios/Index.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/_ViewImports.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/_ViewStart.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fabar/ProyectoONGDBNoSQL/Views/Shared/_Layout.cshtml]
+[C:/ProyectoONGDBNoSQL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nke5k0lbgu

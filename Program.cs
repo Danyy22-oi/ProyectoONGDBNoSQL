@@ -1,3 +1,4 @@
+using ProyectoONGDBNoSQL.Data;
 using ProyectoONGDBNoSQL.Repositories; 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,9 @@ builder.Services.AddScoped<VoluntarioRepository>();
 builder.Services.AddScoped<DonanteRepository>();
 builder.Services.AddScoped<DonacionRepository>();
 builder.Services.AddScoped<ProyectoRepository>();
+builder.Services.AddScoped<RecursoRepository>();
+builder.Services.AddScoped<InventarioRepository>();
+
 
 var app = builder.Build();
 

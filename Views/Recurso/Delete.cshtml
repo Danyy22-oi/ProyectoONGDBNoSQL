@@ -1,0 +1,20 @@
+@model ONG.Models.Recurso
+
+@{
+    ViewData["Title"] = "Eliminar Recurso";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>¿Estás seguro de que deseas eliminar este recurso?</h4>
+<div>
+    <strong>Nombre:</strong> @Model.NombreRecurso <br />
+    <strong>Tipo:</strong> @Model.Tipo <br />
+    <strong>Unidad:</strong> @Model.UnidadMedida
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="IdRecurso" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

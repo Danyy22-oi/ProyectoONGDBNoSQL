@@ -1,8 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Bienvenido a ProyectoONG";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mt-5">
+    <h1 class="display-4 fw-bold text-primary">Bienvenido a ProyectoONG</h1>
+    <p class="lead">Gestiona fácilmente tus recursos e inventario con esta plataforma web intuitiva.</p>
+
+    <div class="mt-4 d-flex justify-content-center gap-3">
+        <a class="btn btn-lg btn-primary shadow" asp-controller="Inventario" asp-action="Index">
+            📦 Ir a Inventario
+        </a>
+        <a class="btn btn-lg btn-success shadow" asp-controller="Recurso" asp-action="Index">
+            📋 Ver Recursos
+        </a>
+    </div>
 </div>
