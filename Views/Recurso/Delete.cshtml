@@ -4,16 +4,17 @@
     ViewData["Title"] = "Eliminar Recurso";
 }
 
-<h2>@ViewData["Title"]</h2>
+<h2 class="mt-4 text-danger">@ViewData["Title"]</h2>
 
-<h4>¿Estás seguro de que deseas eliminar este recurso?</h4>
-<div>
-    <strong>Nombre:</strong> @Model.NombreRecurso <br />
-    <strong>Tipo:</strong> @Model.Tipo <br />
-    <strong>Unidad:</strong> @Model.UnidadMedida
+<h4 class="mb-3">¿Estás seguro de que deseas eliminar este recurso?</h4>
+
+<div class="mb-4">
+    <p><strong>Nombre:</strong> @Model.NombreRecurso</p>
+    <p><strong>Tipo:</strong> @Model.Tipo</p>
+    <p><strong>Unidad:</strong> @Model.UnidadMedida</p>
 </div>
 
-<form asp-action="DeleteConfirmed" method="post">
+<form asp-action="Delete" method="post">
     <input type="hidden" asp-for="IdRecurso" />
     <button type="submit" class="btn btn-danger">Eliminar</button>
     <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
