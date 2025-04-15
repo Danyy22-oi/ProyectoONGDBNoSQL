@@ -1,0 +1,44 @@
+@model ProyectoONGDBNoSQL.Models.Usuario
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<h2>Editar Usuario</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Apellido"></label>
+        <input asp-for="Apellido" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Pass"></label>
+        <input asp-for="Pass" class="form-control" type="password" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rol"></label>
+        <input asp-for="Rol" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Estado"></label>
+        <input asp-for="Estado" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

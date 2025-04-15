@@ -1,0 +1,48 @@
+@model ProyectoONGDBNoSQL.Models.Usuario
+
+@{
+    ViewData["Title"] = "Agregar Usuario";
+}
+
+<h2>Agregar Usuario</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Apellido"></label>
+        <input asp-for="Apellido" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" type="email" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Pass">Contraseña</label>
+        <input asp-for="Pass" class="form-control" type="password" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rol"></label>
+        <select asp-for="Rol" class="form-control">
+            <option value="admin">Admin</option>
+            <option value="usuario">Usuario</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Estado"></label>
+        <select asp-for="Estado" class="form-control">
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

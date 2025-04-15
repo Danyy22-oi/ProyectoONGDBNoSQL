@@ -1,0 +1,38 @@
+@model List<ProyectoONGDBNoSQL.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h2>Lista de Usuarios</h2>
+
+<a class="btn btn-success mb-3" asp-action="Create">Agregar Usuario</a>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Rol</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.Nombre</td>
+                <td>@u.Apellido</td>
+                <td>@u.Email</td>
+                <td>@u.Rol</td>
+                <td>@u.Estado</td>
+                <td>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@u.Id">Editar</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@u.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

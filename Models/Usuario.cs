@@ -18,7 +18,7 @@ namespace ProyectoONGDBNoSQL.Models
         [BsonElement("email")]
         public string Email { get; set; } = string.Empty;
 
-        [BsonElement("contrase�a")]
+        [BsonElement("contraseña")]
         public string Pass { get; set; } = string.Empty;
 
         [BsonElement("rol")]

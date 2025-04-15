@@ -1,0 +1,20 @@
+@model ProyectoONGDBNoSQL.Models.Usuario
+
+@{
+    ViewData["Title"] = "Eliminar Usuario";
+}
+
+<h2>¿Desea eliminar este usuario?</h2>
+
+<div>
+    <strong>Nombre:</strong> @Model.Nombre @Model.Apellido <br />
+    <strong>Email:</strong> @Model.Email <br />
+    <strong>Rol:</strong> @Model.Rol <br />
+    <strong>Estado:</strong> @Model.Estado
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
