@@ -1,17 +1,19 @@
-@model List<ONG.Models.Inventario>
-
+@model IEnumerable<ONG.Models.Inventario>
 @{
     ViewData["Title"] = "Inventario";
+    var nombres = ViewBag.RecursoNombres as Dictionary<string, string>;
 }
 
 <h2>Inventario</h2>
 
-<a asp-action="Create" class="btn btn-primary">Agregar</a>
+<a class="btn btn-primary mb-3" asp-action="Create">
+    <i class="bi bi-plus-circle"></i> Agregar
+</a>
 
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Recurso ID</th>
+            <th>Nombre del Recurso</th>
             <th>Cantidad</th>
             <th>Ubicación</th>
             <th>Acciones</th>
@@ -21,7 +23,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.IdRecurso</td>
+                <td>@(nombres != null && nombres.ContainsKey(item.IdRecurso) ? nombres[item.IdRecurso] : "Desconocido")</td>
                 <td>@item.CantidadDisponible</td>
                 <td>@item.Ubicacion</td>
                 <td>

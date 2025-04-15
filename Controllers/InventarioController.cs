@@ -22,50 +22,66 @@ namespace ProyectoONGDBNoSQL.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var inventario = await _inventarioRepository.GetAllAsync();
-            return View(inventario);
+            var inventarios = await _inventarioRepository.GetAllAsync();
+            var recursos = await _recursoRepository.GetAllAsync();
+            // 🔍 Verificar qué nombres están llegando
+            foreach (var r in recursos)
+            {
+                Console.WriteLine($"ID: {r.IdRecurso}, Nombre: {r.NombreRecurso}");
+            }
+            // Crear diccionario { id => nombre }
+            var recursoNombres = recursos.ToDictionary(r => r.IdRecurso.ToString(), r => r.NombreRecurso);
+
+
+            // Pasar inventario y nombres al ViewBag
+            ViewBag.RecursoNombres = recursoNombres;
+
+            return View(inventarios);
         }
         public async Task<IActionResult> Create()
         {
             var recursos = await _recursoRepository.GetAllAsync();
-
-            // Para el dropdown
             ViewBag.Recursos = new SelectList(recursos, "IdRecurso", "NombreRecurso");
-
-            // Para el script de JavaScript
-            var recursosJson = recursos.Select(r => new
-            {
-                IdRecurso = r.IdRecurso,
-                NombreRecurso = r.NombreRecurso
-            });
-
-            var jsonOptions = new JsonSerializerOptions
-            {
-                PropertyNamingPolicy = null
-            };
-
-            ViewBag.RecursosJson = JsonSerializer.Serialize(recursosJson, jsonOptions);
-
             return View(new Inventario());
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(Inventario inventario)
         {
             Console.WriteLine(">>> LLEGÓ AL MÉTODO POST DE INVENTARIO");
-            Console.WriteLine($"Recurso ID: {inventario.IdRecurso}");
+            Console.WriteLine($"Recurso ID recibido: {inventario.IdRecurso}");
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                await _inventarioRepository.CreateAsync(inventario);
-                return RedirectToAction(nameof(Index));
+                Console.WriteLine(">>> ❌ MODELSTATE NO ES VÁLIDO");
+                foreach (var key in ModelState.Keys)
+                {
+                    var state = ModelState[key];
+                    foreach (var error in state.Errors)
+                    {
+                        Console.WriteLine($"❌ Campo: {key}, Error: {error.ErrorMessage}");
+                    }
+                }
+
+                var recursos = await _recursoRepository.GetAllAsync();
+                ViewBag.Recursos = new SelectList(recursos, "IdRecurso", "NombreRecurso");
+                return View(inventario);
             }
 
-            var recursos = await _recursoRepository.GetAllAsync();
-            ViewBag.Recursos = new SelectList(recursos, "IdRecurso", "NombreRecurso");
-            ViewBag.ListaRecursos = recursos;
-            return View(inventario);
+            await _inventarioRepository.CreateAsync(inventario);
+            return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Edit(string id)
+        {
+            var inventario = await _inventarioRepository.GetByIdAsync(id);
+            if (inventario == null) return NotFound();
+
+            var recursos = await _recursoRepository.GetAllAsync();
+            ViewBag.Recursos = new SelectList(recursos, "IdRecurso", "NombreRecurso", inventario.IdRecurso);
+
+            return View(inventario);
+        }
 
 
         [HttpPost]
