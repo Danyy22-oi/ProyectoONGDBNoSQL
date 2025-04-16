@@ -1,0 +1,31 @@
+@model ProyectoONGDBNoSQL.ViewModels.ComunicacionViewModel
+
+@{
+    ViewData["Title"] = "Eliminar Comunicación";
+}
+
+<h1>Eliminar Comunicación</h1>
+
+<h4>¿Estás segura de que querés eliminar esta comunicación?</h4>
+<hr />
+
+<div class="form-group">
+    <label><strong>Contenido:</strong></label>
+    <p>@Model.Contenido</p>
+</div>
+
+<div class="form-group">
+    <label><strong>Fecha de Creación:</strong></label>
+    <p>@Model.FechaCreacion.ToLocalTime().ToString("g")</p>
+</div>
+
+<div class="form-group">
+    <label><strong>Destinatario (ID):</strong></label>
+    <p>@Model.UsuarioId</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

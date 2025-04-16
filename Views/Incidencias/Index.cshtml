@@ -1,0 +1,45 @@
+@model IEnumerable<ProyectoONGDBNoSQL.Models.Incidencia>
+
+@{
+    ViewData["Title"] = "Incidencias";
+}
+
+<h2>Lista de Incidencias</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Reportar Nueva Incidencia</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Descripción</th>
+            <th>Fecha del Reporte</th>
+            <th>Proyecto</th>
+            <th>Distribución</th>
+            <th>Responsable</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var incidencia in Model)
+        {
+            <tr>
+                <td>@incidencia.TipoIncidencia</td>
+                <td>@incidencia.Descripcion</td>
+                <td>@incidencia.FechaReporte.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@incidencia.ProyectoId</td>
+                <td>@incidencia.DistrbucionId</td>
+                <td>@incidencia.ResponsableId</td>
+                <td>@incidencia.Estado</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@incidencia.Id">Detalles</a> |
+                    <a asp-action="Edit" asp-route-id="@incidencia.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@incidencia.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,52 @@
+@model ProyectoONGDBNoSQL.ViewModels.BeneficiarioViewModel
+
+@{
+    ViewData["Title"] = "Crear Beneficiario";
+}
+
+<h2>Crear Beneficiario</h2>
+
+<form asp-action="Create" method="post">
+    
+    <div class="form-group">
+        <label asp-for="Id">Seleccione Beneficiario</label>
+        @Html.DropDownListFor(model => model.Id, Model.BeneficiariosList, "Seleccione un beneficiario", new { @class = "form-control" })
+        <span asp-validation-for="Id" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Nombre">Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Contacto">Contacto</label>
+        <input asp-for="Contacto" class="form-control" />
+        <span asp-validation-for="Contacto" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ubicacion">Ubicacion</label>
+        <input asp-for="Ubicacion" class="form-control" />
+        <span asp-validation-for="Ubicacion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Necesidades">Necesidades</label>
+        <input asp-for="Necesidades" class="form-control" />
+        <span asp-validation-for="Necesidades" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Proyectos">Proyectos</label>
+        <input asp-for="Proyectos" class="form-control" />
+        <span asp-validation-for="Proyectos" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Crear Beneficiario</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

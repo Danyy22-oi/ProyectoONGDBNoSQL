@@ -7,15 +7,15 @@ namespace ONG.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string IdRecurso { get; set; }
+        public string IdRecurso { get; set; } = string.Empty;
 
         [BsonElement("nombre_recurso")]
-        public string NombreRecurso { get; set; }
+        public string NombreRecurso { get; set; } = string.Empty;
 
         [BsonElement("tipo")]
-        public string Tipo { get; set; }
+        public string Tipo { get; set; } = string.Empty;
 
         [BsonElement("unidad")]
-        public string UnidadMedida { get; set; }
+        public string UnidadMedida { get; set; } = string.Empty;
     }
 }

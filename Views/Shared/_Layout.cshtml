@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProyectoONG.styles.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold text-primary" asp-controller="Home" asp-action="Index">🌍 ProyectoONG</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -24,13 +26,31 @@
                             <a class="btn btn-outline-primary" asp-controller="Home" asp-action="Index">🏠 Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Privacy">🔒 Privacy</a>
+                            <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Privacy">🔒
+                                Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-success" asp-controller="Inventario" asp-action="Index">📦 Inventario</a>
+                            <a class="btn btn-outline-success" asp-controller="Inventario" asp-action="Index">📦
+                                Inventario</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-outline-info" asp-controller="Recurso" asp-action="Index">📋 Recurso</a>
+                        </li>
+                        <li class="nav-item"></li>
+                        <a class="btn btn-outline-warning text-dark" asp-controller="Beneficiarios" asp-action="Index">👥
+                            Beneficiarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-warning text-dark" asp-controller="Distribuciones"
+                                asp-action="Index">📦 Distribuciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-warning text-dark" asp-controller="Incidencias"
+                                asp-action="Index">⚠️ Incidencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-warning text-dark" asp-controller="Comunicaciones"
+                                asp-action="Index">📣 Comunicaciones</a>
                         </li>
                     </ul>
                 </div>
@@ -55,4 +75,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

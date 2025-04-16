@@ -1,0 +1,35 @@
+
+@model ProyectoONGDBNoSQL.ViewModels.DistribucionViewModel
+
+@{
+    ViewData["Title"] = "Eliminar Distribución";
+}
+
+<h2>Eliminar Distribución</h2>
+
+<h4>¿Estás segura de que deseas eliminar esta distribución?</h4>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Proyecto</dt>
+        <dd class="col-sm-10">@Model.ProyectoId</dd>
+
+        <dt class="col-sm-2">Fecha de Envío</dt>
+        <dd class="col-sm-10">@Model.FechaEnvio.ToString("dd/MM/yyyy")</dd>
+
+        <dt class="col-sm-2">Destino</dt>
+        <dd class="col-sm-10">@Model.Destino</dd>
+
+        <dt class="col-sm-2">Recursos Enviados</dt>
+        <dd class="col-sm-10">@Model.RecursoIdList</dd>
+
+        <dt class="col-sm-2">Estado</dt>
+        <dd class="col-sm-10">@Model.Estado</dd>
+    </dl>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

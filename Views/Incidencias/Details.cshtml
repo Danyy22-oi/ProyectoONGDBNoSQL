@@ -1,0 +1,35 @@
+@model ProyectoONGDBNoSQL.Models.Incidencia
+
+@{
+    ViewData["Title"] = "Detalles de la Incidencia";
+}
+
+<h2>Detalles de la Incidencia</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Tipo</dt>
+    <dd class="col-sm-9">@Model.TipoIncidencia</dd>
+
+    <dt class="col-sm-3">Descripción</dt>
+    <dd class="col-sm-9">@Model.Descripcion</dd>
+
+    <dt class="col-sm-3">Fecha del Reporte</dt>
+    <dd class="col-sm-9">@Model.FechaReporte.ToString("dd/MM/yyyy HH:mm")</dd>
+
+    <dt class="col-sm-3">Proyecto ID</dt>
+    <dd class="col-sm-9">@Model.ProyectoId</dd>
+
+    <dt class="col-sm-3">Distribución ID</dt>
+    <dd class="col-sm-9">@Model.DistrbucionId</dd>
+
+    <dt class="col-sm-3">Responsable</dt>
+    <dd class="col-sm-9">@Model.ResponsableId</dd>
+
+    <dt class="col-sm-3">Estado</dt>
+    <dd class="col-sm-9">@Model.Estado</dd>
+</dl>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</p>

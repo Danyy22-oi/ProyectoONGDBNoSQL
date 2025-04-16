@@ -1,0 +1,43 @@
+
+@model IEnumerable<ProyectoONGDBNoSQL.ViewModels.DistribucionViewModel>
+
+
+@{
+    ViewData["Title"] = "Lista de Distribuciones";
+}
+
+<h2>Lista de Distribuciones</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Crear Nueva Distribución</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Proyecto</th>
+            <th>Fecha de Envío</th>
+            <th>Destino</th>
+            <th>Recursos Enviados</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProyectoId</td>
+                <td>@item.FechaEnvio.ToString("dd/MM/yyyy")</td>
+                <td>@item.Destino</td>
+                <td>@item.RecursoIdList</td>
+                <td>@item.Estado</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Detalles</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

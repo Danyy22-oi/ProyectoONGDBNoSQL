@@ -1,0 +1,26 @@
+@model ProyectoONGDBNoSQL.ViewModels.ComunicacionViewModel
+
+@{
+    ViewData["Title"] = "Detalles de la Comunicación";
+}
+
+<h2>Detalles de la Comunicación</h2>
+
+<dl class="row">
+    <dt class="col-sm-2">ID</dt>
+    <dd class="col-sm-10">@Model.Id</dd>
+
+    <dt class="col-sm-2">Contenido</dt>
+    <dd class="col-sm-10">@Model.Contenido</dd>
+
+    <dt class="col-sm-2">Fecha de Creación</dt>
+    <dd class="col-sm-10">@Model.FechaCreacion.ToLocalTime().ToString("g")</dd>
+
+    <dt class="col-sm-2">Destinatario (ID)</dt>
+    <dd class="col-sm-10">@Model.UsuarioId</dd>
+</dl>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</p>

@@ -9,165 +9,245 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoONG
 build_property.RootNamespace = ProyectoONG
-build_property.ProjectDir = C:\ProyectoONGDBNoSQL\
+build_property.ProjectDir = /Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\ProyectoONGDBNoSQL
+build_property.MSBuildProjectDirectory = /Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donaciones/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xDcmVhdGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Beneficiarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVuZWZpY2lhcmlvcy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donaciones/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xEZWxldGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Beneficiarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVuZWZpY2lhcmlvcy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donaciones/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xEZXRhaWxzLmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Beneficiarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVuZWZpY2lhcmlvcy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donaciones/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xFZGl0LmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Beneficiarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVuZWZpY2lhcmlvcy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donaciones/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYWNpb25lc1xJbmRleC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Beneficiarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVuZWZpY2lhcmlvcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donantes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcRGVsZXRlLmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Comunicaciones/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tdW5pY2FjaW9uZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donantes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcRGV0YWlscy5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Comunicaciones/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tdW5pY2FjaW9uZXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donantes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcRWRpdC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Comunicaciones/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tdW5pY2FjaW9uZXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Donantes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYW50ZXNcSW5kZXguY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Comunicaciones/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tdW5pY2FjaW9uZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Comunicaciones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tdW5pY2FjaW9uZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Distribuciones/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzdHJpYnVjaW9uZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Inventario/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xDcmVhdGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Distribuciones/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzdHJpYnVjaW9uZXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Inventario/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xEZWxldGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Distribuciones/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzdHJpYnVjaW9uZXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Inventario/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xFZGl0LmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Distribuciones/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzdHJpYnVjaW9uZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Inventario/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbmRleC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Distribuciones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzdHJpYnVjaW9uZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Proyectos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXENyZWF0ZS5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donaciones/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYWNpb25lcy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Proyectos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXERlbGV0ZS5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donaciones/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYWNpb25lcy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Proyectos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXERldGFpbHMuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donaciones/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYWNpb25lcy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Proyectos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXEVkaXQuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donaciones/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYWNpb25lcy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Proyectos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJveWVjdG9zXEluZGV4LmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donaciones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYWNpb25lcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Recurso/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xDcmVhdGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donantes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYW50ZXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Recurso/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xEZWxldGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donantes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYW50ZXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Recurso/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xFZGl0LmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donantes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYW50ZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Recurso/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjdXJzb1xJbmRleC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Donantes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYW50ZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Usuario/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Incidencias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5jaWRlbmNpYXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Usuario/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Incidencias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5jaWRlbmNpYXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Usuario/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Incidencias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5jaWRlbmNpYXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Usuario/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Incidencias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5jaWRlbmNpYXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Incidencias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5jaWRlbmNpYXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcRGVsZXRlLmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Inventario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50YXJpby9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcRGV0YWlscy5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Inventario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50YXJpby9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcRWRpdC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Inventario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50YXJpby9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Voluntarios/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50YXJpb3NcSW5kZXguY3NodG1s
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Inventario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52ZW50YXJpby9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Proyectos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJveWVjdG9zL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Proyectos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJveWVjdG9zL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoONGDBNoSQL/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-nke5k0lbgu
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Proyectos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJveWVjdG9zL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Proyectos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJveWVjdG9zL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Proyectos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJveWVjdG9zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Recurso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjdXJzby9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Recurso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjdXJzby9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Recurso/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjdXJzby9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Recurso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjdXJzby9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Voluntarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50YXJpb3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Voluntarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50YXJpb3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Voluntarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50YXJpb3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Voluntarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50YXJpb3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Voluntarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50YXJpb3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hrgj1pg3ei

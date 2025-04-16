@@ -15,7 +15,10 @@ builder.Services.AddScoped<DonacionRepository>();
 builder.Services.AddScoped<ProyectoRepository>();
 builder.Services.AddScoped<RecursoRepository>();
 builder.Services.AddScoped<InventarioRepository>();
-
+builder.Services.AddScoped<DistribucionRepository>();
+builder.Services.AddScoped<BeneficiarioRepository>();
+builder.Services.AddScoped<ComunicacionRepository>();
+builder.Services.AddScoped<IncidenciaRepository>();
 
 var app = builder.Build();
 

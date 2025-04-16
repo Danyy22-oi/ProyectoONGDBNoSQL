@@ -1,0 +1,43 @@
+@model ProyectoONGDBNoSQL.Models.Incidencia
+
+@{
+    ViewData["Title"] = "Eliminar Incidencia";
+}
+
+<h2>Eliminar Incidencia</h2>
+
+<h4>¿Estás segura de que deseas eliminar esta incidencia?</h4>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-2">Tipo</dt>
+    <dd class="col-sm-10">@Model.TipoIncidencia</dd>
+
+    <dt class="col-sm-2">Descripción</dt>
+    <dd class="col-sm-10">@Model.Descripcion</dd>
+
+    <dt class="col-sm-2">Fecha</dt>
+    <dd class="col-sm-10">@Model.FechaReporte.ToString("dd/MM/yyyy HH:mm")</dd>
+
+    <dt class="col-sm-2">Proyecto ID</dt>
+    <dd class="col-sm-10">@Model.ProyectoId</dd>
+
+    <dt class="col-sm-2">Distribución ID</dt>
+    <dd class="col-sm-10">@Model.DistrbucionId</dd>
+
+    <dt class="col-sm-2">Responsable</dt>
+    <dd class="col-sm-10">@Model.ResponsableId</dd>
+
+    <dt class="col-sm-2">Estado</dt>
+    <dd class="col-sm-10">@Model.Estado</dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

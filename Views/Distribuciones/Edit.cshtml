@@ -1,0 +1,56 @@
+
+@model ProyectoONGDBNoSQL.ViewModels.DistribucionViewModel
+
+
+@{
+    ViewData["Title"] = "Editar Distribución";
+}
+
+<h2>Editar Distribución</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="ProyectoId">Seleccione un Proyecto</label>
+        @Html.DropDownListFor(model => model.ProyectoId, Model.ProyectosList, "Seleccione un Proyecto", new { @class = "form-control" })
+        <span asp-validation-for="ProyectoId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FechaEnvio">Fecha de Envío</label>
+        <input asp-for="FechaEnvio" class="form-control" />
+        <span asp-validation-for="FechaEnvio" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Destino">Destino</label>
+        <input asp-for="Destino" class="form-control" />
+        <span asp-validation-for="Destino" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RecursoIdList">Recursos Enviados</label>
+        <input asp-for="RecursoIdList" class="form-control" />
+        <span asp-validation-for="RecursoIdList" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ResponsableId">Seleccione un Responsable</label>
+        @Html.DropDownListFor(model => model.ResponsableId, Model.ResponsablesList, "Seleccione un Responsable", new { @class = "form-control" })
+        <span asp-validation-for="ResponsableId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Estado">Estado</label>
+        <input asp-for="Estado" class="form-control" />
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -44,17 +44,17 @@ namespace ProyectoONGDBNoSQL.Controllers
             return View(voluntario);
         }
 
-        // CREACIÓN MANUAL: No permitida
+        // CREACIï¿½N MANUAL: No permitida
         public IActionResult Create()
         {
-            return NotFound("La creación manual de voluntarios está deshabilitada. Asigne voluntarios a través del módulo de Proyectos.");
+            return NotFound("La creaciï¿½n manual de voluntarios estï¿½ deshabilitada. Asigne voluntarios a travï¿½s del mï¿½dulo de Proyectos.");
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(VoluntarioViewModel model)
         {
-            return NotFound("La creación manual de voluntarios está deshabilitada. Asigne voluntarios a través del módulo de Proyectos.");
+            return NotFound("La creaciï¿½n manual de voluntarios estï¿½ deshabilitada. Asigne voluntarios a travï¿½s del mï¿½dulo de Proyectos.");
         }
 
         // GET: Voluntarios/Edit/{id}

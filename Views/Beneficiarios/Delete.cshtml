@@ -1,0 +1,40 @@
+@model ProyectoONGDBNoSQL.ViewModels.BeneficiarioViewModel
+
+@{
+    ViewData["Title"] = "Eliminar Beneficiario";
+}
+
+<h2>Eliminar Beneficiario</h2>
+
+<h4>Esta seguro de que desea eliminar este Beneficiario?</h4>
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-2">Beneficiario</dt>
+    <dd class="col-sm-10">@Model.Id</dd>
+
+    <dt class="col-sm-2">Nombre</dt>
+    <dd class="col-sm-10">@Model.Nombre</dd>
+
+    <dt class="col-sm-2">Contacto</dt>
+    <dd class="col-sm-10">@Model.Contacto</dd>
+
+    <dt class="col-sm-2">Ubicacion</dt>
+    <dd class="col-sm-10">@Model.Ubicacion</dd>
+
+    <dt class="col-sm-2">Necesidades</dt>
+    <dd class="col-sm-10">@Model.Necesidades</dd>
+
+    <dt class="col-sm-2">Proyectos</dt>
+    <dd class="col-sm-10">@Model.Proyectos</dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -1,0 +1,52 @@
+@model IEnumerable<ProyectoONGDBNoSQL.Models.Beneficiario>
+    
+@{
+    ViewData["Title"] = "Beneficiarios";
+}
+
+<h2>Lista de Beneficiarios</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Beneficiario</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Beneficiario</th>
+            <th>Nombre</th>
+            <th>Contacto</th>
+            <th>Ubicacion</th>
+            <th>Necesidades</th>
+            <th>Proyectos</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var beneficiario in Model)
+        {
+            <tr>
+                <td>@beneficiario.Id</td>
+                <td>@beneficiario.Nombre</td>
+                <td>@beneficiario.Contacto</td>
+                <td>@beneficiario.Ubicacion</td>
+                <td>
+                    @foreach (var n in beneficiario.Necesidades)
+                    {
+                        <span class="badge bg-secondary">@n</span>
+                    }
+                </td>
+                <td>
+                    @foreach (var p in beneficiario.Proyectos)
+                    {
+                        <span class="badge bg-info">@p</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@beneficiario.Id" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@beneficiario.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+@model ProyectoONGDBNoSQL.ViewModels.IncidenciaViewModel
+
+@{
+    ViewData["Title"] = "Crear Incidencia";
+}
+
+<h2>Crear Incidencia</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="TipoIncidencia">Tipo de Incidencia</label>
+        <input asp-for="TipoIncidencia" class="form-control" />
+        <span asp-validation-for="TipoIncidencia" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descripcion">Descripción</label>
+        <textarea asp-for="Descripcion" class="form-control"></textarea>
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FechaReporte">Fecha de Reporte</label>
+        <input asp-for="FechaReporte" type="datetime-local" class="form-control" />
+        <span asp-validation-for="FechaReporte" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ProyectoId">Proyecto Asociado</label>
+        @Html.DropDownListFor(model => model.ProyectoId, Model.ProyectosList, "Seleccione un proyecto", new { @class = "form-control" })
+        <span asp-validation-for="ProyectoId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DistrbucionId">Distribución Asociada</label>
+        <input asp-for="DistrbucionId" class="form-control" />
+        <span asp-validation-for="DistrbucionId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ResponsableId">Responsable</label>
+        @Html.DropDownListFor(model => model.ResponsableId, Model.ResponsablesList, "Seleccione responsable", new { @class = "form-control" })
+        <span asp-validation-for="ResponsableId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Estado">Estado</label>
+        <input asp-for="Estado" class="form-control" />
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear Incidencia</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -1,0 +1,60 @@
+@model ProyectoONGDBNoSQL.Models.Incidencia
+
+@{
+    ViewData["Title"] = "Editar Incidencia";
+}
+
+<h2>Editar Incidencia</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="TipoIncidencia">Tipo de Incidencia</label>
+        <input asp-for="TipoIncidencia" class="form-control" />
+        <span asp-validation-for="TipoIncidencia" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descripcion">Descripción</label>
+        <textarea asp-for="Descripcion" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FechaReporte">Fecha del Reporte</label>
+        <input asp-for="FechaReporte" class="form-control" type="datetime-local" />
+        <span asp-validation-for="FechaReporte" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ProyectoId">Proyecto ID</label>
+        <input asp-for="ProyectoId" class="form-control" />
+        <span asp-validation-for="ProyectoId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DistrbucionId">Distribución ID</label>
+        <input asp-for="DistrbucionId" class="form-control" />
+        <span asp-validation-for="DistrbucionId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ResponsableId">Responsable ID</label>
+        <input asp-for="ResponsableId" class="form-control" />
+        <span asp-validation-for="ResponsableId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Estado">Estado</label>
+        <input asp-for="Estado" class="form-control" />
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
