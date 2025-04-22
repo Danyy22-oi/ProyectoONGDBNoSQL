@@ -599,24 +599,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/chrisaqko/.nuget/packages/": {}
+    "C:\\Users\\fabar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/ProyectoONG.csproj",
+      "projectUniqueName": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\ProyectoONG.csproj",
       "projectName": "ProyectoONG",
-      "projectPath": "/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/ProyectoONG.csproj",
-      "packagesPath": "/Users/chrisaqko/.nuget/packages/",
-      "outputPath": "/Users/chrisaqko/Library/Mobile Documents/com~apple~CloudDocs/Computer Science/VII Base de Datos NoSQL/ProyectoONGDBNoSQL/obj/",
+      "projectPath": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\ProyectoONG.csproj",
+      "packagesPath": "C:\\Users\\fabar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/chrisaqko/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\fabar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -635,7 +642,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -665,7 +672,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

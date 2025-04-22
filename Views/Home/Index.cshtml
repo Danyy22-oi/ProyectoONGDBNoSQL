@@ -5,35 +5,39 @@
 <div class="text-center mt-5">
     <h1 class="display-4 fw-bold text-primary">Bienvenido a ProyectoONG</h1>
     <p class="lead">Gestiona fácilmente tus recursos e inventario con esta plataforma web intuitiva.</p>
-    <div class="mt-4 d-flex justify-content-center gap-3">
-        <a class="btn btn-lg btn-primary shadow d-flex align-items-center gap-2" asp-controller="Inventario"
-            asp-action="Index">
+    <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+        <a class="btn btn-lg btn-primary shadow d-flex align-items-center gap-2" asp-controller="Inventario" asp-action="Index">
             📦 Ir a Inventario
         </a>
-        <a class="btn btn-lg btn-success shadow d-flex align-items-center gap-2" asp-controller="Recurso"
-            asp-action="Index">
+        <a class="btn btn-lg btn-success shadow d-flex align-items-center gap-2" asp-controller="Recurso" asp-action="Index">
             📝 Ver Recursos
         </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Usuario"
-            asp-action="Index">
+        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Usuario" asp-action="Index">
             👥 Administrar Usuarios
         </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Beneficiarios"
-            asp-action="Index">
-            Beneficiarios
+        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Voluntarios" asp-action="Index">
+            🤝 Voluntarios
         </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Incidencias"
-            asp-action="Index">
-            Incidencias
+        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Donantes" asp-action="Index">
+            🎁 Donantes
         </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Comunicaciones"
-            asp-action="Index">
-            Comunicaciones
+        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Donaciones" asp-action="Index">
+            💸 Donaciones
         </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Distribuciones"
-            asp-action="Index">
-            Distribuciones
+        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Proyectos" asp-action="Index">
+            📋 Proyectos
+        </a>
+        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Beneficiarios" asp-action="Index">
+            🏘 Beneficiarios
+        </a>
+        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Incidencias" asp-action="Index">
+            🚧 Incidencias
+        </a>
+        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Comunicaciones" asp-action="Index">
+            📣 Comunicaciones
+        </a>
+        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Distribuciones" asp-action="Index">
+            🚚 Distribuciones
         </a>
     </div>
-
 </div>
