@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MongoDB.Bson;
 using ProyectoONGDBNoSQL.Models;
 using ProyectoONGDBNoSQL.Repositories;
 using ProyectoONGDBNoSQL.ViewModels;
@@ -65,18 +66,25 @@ namespace ProyectoONGDBNoSQL.Controllers
                 });
                 return View(model);
             }
+
+            
+            var newId = ObjectId.GenerateNewId().ToString();
             var proyecto = new Proyecto
             {
+                Id = newId,
                 NombreProyecto = model.NombreProyecto,
                 TipoCrisis = model.TipoCrisis,
                 FechaInicio = model.FechaInicio,
                 FechaFin = model.FechaFin,
                 Estado = model.Estado,
                 Descripcion = model.Descripcion,
-                VoluntariosAsignados = new System.Collections.Generic.List<string>()
+                VoluntariosAsignados = new List<string>()
             };
+
             await _proyectoRepository.CreateAsync(proyecto);
-            var voluntariosAsignados = new System.Collections.Generic.List<string>();
+
+           
+            var voluntariosAsignados = new List<string>();
             if (model.VoluntariosSeleccionados != null)
             {
                 foreach (var userId in model.VoluntariosSeleccionados.Distinct())
@@ -84,37 +92,38 @@ namespace ProyectoONGDBNoSQL.Controllers
                     var voluntario = await _voluntarioRepository.GetByUserIdAsync(userId);
                     if (voluntario != null)
                     {
-                        if (voluntario.HistorialProyectos == null)
-                            voluntario.HistorialProyectos = new System.Collections.Generic.List<string>();
-                        if (!voluntario.HistorialProyectos.Contains(proyecto.Id))
+                        voluntario.HistorialProyectos ??= new List<string>();
+                        if (!voluntario.HistorialProyectos.Contains(newId))
                         {
-                            voluntario.HistorialProyectos.Add(proyecto.Id);
+                            voluntario.HistorialProyectos.Add(newId);
                             await _voluntarioRepository.UpdateAsync(voluntario.Id, voluntario);
                         }
                     }
                     else
                     {
                         var usuario = await _usuarioRepository.GetByIdAsync(userId);
-                        if (usuario != null)
+                        voluntario = new Voluntario
                         {
-                            voluntario = new Voluntario
-                            {
-                                InfoUsuarioId = usuario.Id,
-                                Habilidades = new System.Collections.Generic.List<string>(),
-                                Disponibilidad = string.Empty,
-                                HistorialProyectos = new System.Collections.Generic.List<string> { proyecto.Id }
-                            };
-                            await _voluntarioRepository.CreateAsync(voluntario);
-                        }
+                            InfoUsuarioId = usuario.Id,
+                            Habilidades = new List<string>(),
+                            Disponibilidad = string.Empty,
+                            HistorialProyectos = new List<string> { newId }
+                        };
+                        await _voluntarioRepository.CreateAsync(voluntario);
                     }
+
                     if (voluntario != null && !voluntariosAsignados.Contains(voluntario.Id))
                         voluntariosAsignados.Add(voluntario.Id);
                 }
             }
+
+            
             proyecto.VoluntariosAsignados = voluntariosAsignados;
-            await _proyectoRepository.UpdateAsync(proyecto.Id, proyecto);
+            await _proyectoRepository.UpdateAsync(newId, proyecto);
+
             return RedirectToAction(nameof(Index));
         }
+
 
         public async Task<IActionResult> Edit(string id)
         {
