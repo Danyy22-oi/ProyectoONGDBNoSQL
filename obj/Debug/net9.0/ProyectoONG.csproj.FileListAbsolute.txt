@@ -25,7 +25,6 @@ C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/ProyectoONG.sourcelink.json
 C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/scopedcss/bundle/ProyectoONG.styles.css
 C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/scopedcss/projectbundle/ProyectoONG.bundle.scp.css
-C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/compressed/01fktepvwf-b9sayid5wm.gz
 C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/compressed/j98o4wwquk-61n19gt1b8.gz
 C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/compressed/wdy8djowi7-xtxxf3hu2r.gz
 C:/Users/fabar/ProyectoONGDBNoSQL/obj/Debug/net9.0/compressed/2ppp80f9ax-t1cqhe9u97.gz
@@ -341,7 +340,6 @@ C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\ProyectoONG.sourcelink.json
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\scopedcss\bundle\ProyectoONG.styles.css
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\scopedcss\projectbundle\ProyectoONG.bundle.scp.css
-C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\compressed\01fktepvwf-b9sayid5wm.gz
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\compressed\j98o4wwquk-61n19gt1b8.gz
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\compressed\wdy8djowi7-xtxxf3hu2r.gz
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\compressed\2ppp80f9ax-t1cqhe9u97.gz
@@ -421,3 +419,4 @@ C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\refint\ProyectoONG.dll
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\ProyectoONG.pdb
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\ProyectoONG.genruntimeconfig.cache
 C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\ref\ProyectoONG.dll
+C:\Users\fabar\ProyectoONGDBNoSQL\obj\Debug\net9.0\compressed\01fktepvwf-8gnxhs8qgz.gz

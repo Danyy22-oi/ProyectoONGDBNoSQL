@@ -1,4 +1,4 @@
-/* Variables globales */
+Ôªø/* Variables globales */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
@@ -32,7 +32,7 @@ body {
     padding: 2rem 0;
 }
 
-/* Header y navegaciÛn */
+/* Header y navegaci√≥n */
 .navbar {
     background-color: var(--primary-color) !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -197,7 +197,7 @@ body {
     border-radius: 4px;
 }
 
-/* P·gina de inicio */
+/* P√°gina de inicio */
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, #1a2530 100%);
     color: white;
@@ -543,7 +543,6 @@ body {
         font-size: 1.1rem;
     }
 }
-
 /* ====================== */
 /* ESTILOS MEJORADOS PARA TABLAS */
 /* ====================== */
@@ -632,7 +631,7 @@ body {
         letter-spacing: 0.5px;
     }
 
-    /* Estilos especÌficos para columnas */
+    /* Estilos espec√≠ficos para columnas */
     .table-enhanced .text-center {
         text-align: center;
     }
@@ -661,7 +660,7 @@ body {
 }
 
 /* ====================== */
-/* ESTILOS ESPECÕFICOS PARA DONACIONES */
+/* ESTILOS ESPEC√çFICOS PARA DONACIONES */
 /* ====================== */
 
 .table-donaciones {
@@ -676,7 +675,7 @@ body {
         background-color: #ebf0ff;
     }
 
-/* Estilos para tipos de donaciÛn */
+/* Estilos para tipos de donaci√≥n */
 .donation-type {
     display: inline-block;
     padding: 0.3rem 0.6rem;

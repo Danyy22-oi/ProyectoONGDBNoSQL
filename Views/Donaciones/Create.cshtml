@@ -4,44 +4,46 @@
     ViewData["Title"] = "Crear Donación";
 }
 
-<h2>Crear Donación</h2>
+<h2>@ViewData["Title"]</h2>
 
 <form asp-action="Create" method="post">
-    
-    <div class="form-group">
-        <label asp-for="DonanteId">Seleccione Donante (Usuario)</label>
-        @Html.DropDownListFor(model => model.DonanteId, Model.DonantesList, "Seleccione un donante", new { @class = "form-control" })
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <div class="mb-3">
+        <label asp-for="DonanteId" class="form-label">Seleccione Donante</label>
+        <select asp-for="DonanteId" asp-items="Model.DonantesList" class="form-select">
+            <option value="">-- Seleccione un donante --</option>
+        </select>
         <span asp-validation-for="DonanteId" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="FechaDonacion">Fecha de Donación</label>
-        <input asp-for="FechaDonacion" class="form-control" type="date" />
+    <div class="mb-3">
+        <label asp-for="FechaDonacion" class="form-label">Fecha de Donación</label>
+        <input asp-for="FechaDonacion" type="date" class="form-control" />
         <span asp-validation-for="FechaDonacion" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Tipo">Tipo (monetaria, insumos, etc.)</label>
+    <div class="mb-3">
+        <label asp-for="Tipo" class="form-label">Tipo (monetaria, insumos, etc.)</label>
         <input asp-for="Tipo" class="form-control" />
         <span asp-validation-for="Tipo" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Detalle">Detalle</label>
+    <div class="mb-3">
+        <label asp-for="Detalle" class="form-label">Detalle</label>
         <input asp-for="Detalle" class="form-control" />
         <span asp-validation-for="Detalle" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Estado">Estado (pendiente, recibida, en tránsito, etc.)</label>
+    <div class="mb-3">
+        <label asp-for="Estado" class="form-label">Estado (pendiente, recibida, en tránsito, etc.)</label>
         <input asp-for="Estado" class="form-control" />
         <span asp-validation-for="Estado" class="text-danger"></span>
     </div>
 
-    <!-- Campo para el teléfono de contacto -->
-    <div class="form-group">
-        <label asp-for="ContactoTelefono">Teléfono de Contacto</label>
-        <input asp-for="ContactoTelefono" class="form-control" />
+    <div class="mb-3">
+        <label asp-for="ContactoTelefono" class="form-label">Teléfono de Contacto</label>
+        <input asp-for="ContactoTelefono" type="tel" class="form-control" />
         <span asp-validation-for="ContactoTelefono" class="text-danger"></span>
     </div>
 
@@ -50,5 +52,5 @@
 </form>
 
 @section Scripts {
-    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <partial name="_ValidationScriptsPartial" />
 }

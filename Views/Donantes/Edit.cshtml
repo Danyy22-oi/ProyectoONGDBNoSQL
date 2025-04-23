@@ -4,29 +4,35 @@
     ViewData["Title"] = "Editar Donante";
 }
 
-<h2>Editar Donante</h2>
+<h2>@ViewData["Title"]</h2>
 
 <form asp-action="Edit" method="post">
-    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+    <input asp-for="Id" type="hidden" />
 
-    <div class="form-group">
-        <label asp-for="Nombre"></label>
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
         <input asp-for="Nombre" class="form-control" />
         <span asp-validation-for="Nombre" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="TipoDonante"></label>
-        @Html.DropDownListFor(model => model.TipoDonante, Model.TipoDonanteList, "Seleccione un tipo", new { @class = "form-control" })
+
+    <div class="mb-3">
+        <label asp-for="TipoDonante" class="form-label">Tipo de Donante</label>
+        <select asp-for="TipoDonante" asp-items="Model.TipoDonanteList" class="form-select">
+            <option value="">-- Seleccione un tipo de donante --</option>
+        </select>
         <span asp-validation-for="TipoDonante" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="Email"></label>
-        <input asp-for="Email" class="form-control" />
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" type="email" class="form-control" />
         <span asp-validation-for="Email" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="Telefono"></label>
-        <input asp-for="Telefono" class="form-control" />
+
+    <div class="mb-3">
+        <label asp-for="Telefono" class="form-label">Teléfono</label>
+        <input asp-for="Telefono" type="tel" class="form-control" />
         <span asp-validation-for="Telefono" class="text-danger"></span>
     </div>
 
@@ -35,5 +41,5 @@
 </form>
 
 @section Scripts {
-    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <partial name="_ValidationScriptsPartial" />
 }

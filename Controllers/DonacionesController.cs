@@ -127,17 +127,20 @@ namespace ProyectoONGDBNoSQL.Controllers
         }
 
 
-        // GET: Donaciones/Edit/{id}
+        [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
                 return BadRequest();
+
             var donacion = await _donacionRepository.GetByIdAsync(id);
             if (donacion == null)
                 return NotFound();
 
-            var usuarios = await _usuarioRepository.GetAllAsync();
-            var viewModel = new DonacionViewModel
+            // Obtenemos el donante para mostrar su info
+            var donante = await _donanteRepository.GetByIdAsync(donacion.DonanteId);
+
+            var vm = new DonacionViewModel
             {
                 Id = donacion.Id,
                 DonanteId = donacion.DonanteId,
@@ -145,17 +148,13 @@ namespace ProyectoONGDBNoSQL.Controllers
                 Tipo = donacion.Tipo,
                 Detalle = donacion.Detalle,
                 Estado = donacion.Estado,
-                DonantesList = usuarios.Select(u => new SelectListItem
-                {
-                    Value = u.Id,
-                    Text = $"{u.Nombre} {u.Apellido}"
-                })
+                ContactoTelefono = donante?.Contacto?.Telefono // Solo para visualización
             };
 
-            return View(viewModel);
+            ViewBag.DonanteNombre = donante?.Nombre ?? "Donante no encontrado";
+            return View(vm);
         }
 
-        // POST: Donaciones/Edit/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, DonacionViewModel model)
@@ -163,18 +162,17 @@ namespace ProyectoONGDBNoSQL.Controllers
             if (id != model.Id)
                 return BadRequest();
 
+            // Ignoramos la validación del teléfono en edición
+            ModelState.Remove("ContactoTelefono");
+
             if (!ModelState.IsValid)
             {
-                var usuarios = await _usuarioRepository.GetAllAsync();
-                model.DonantesList = usuarios.Select(u => new SelectListItem
-                {
-                    Value = u.Id,
-                    Text = $"{u.Nombre} {u.Apellido}"
-                });
+                var donante = await _donanteRepository.GetByIdAsync(model.DonanteId);
+                ViewBag.DonanteNombre = donante?.Nombre ?? "Donante no encontrado";
                 return View(model);
             }
 
-            var donacionToUpdate = new Donacion
+            var updated = new Donacion
             {
                 Id = model.Id,
                 DonanteId = model.DonanteId,
@@ -184,9 +182,10 @@ namespace ProyectoONGDBNoSQL.Controllers
                 Estado = model.Estado
             };
 
-            await _donacionRepository.UpdateAsync(id, donacionToUpdate);
+            await _donacionRepository.UpdateAsync(id, updated);
             return RedirectToAction(nameof(Index));
         }
+
 
         // GET: Donaciones/Delete/{id}
         public async Task<IActionResult> Delete(string id)

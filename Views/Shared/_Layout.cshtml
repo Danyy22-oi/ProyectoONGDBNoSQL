@@ -1,80 +1,144 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ProyectoONG</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/Templates/css/styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProyectoONG.styles.css" asp-append-version="true" />
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom shadow-sm">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold text-primary" asp-controller="Home" asp-action="Index">🌍 ProyectoONG</a>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-globe-americas me-2"></i>ProyectoONG
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-2">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="btn btn-outline-primary" asp-controller="Home" asp-action="Index">🏠 Home</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door me-1"></i>Inicio
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Privacy">🔒 Privacy</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-box-seam me-1"></i>Recursos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Inventario" asp-action="Index">
+                                        <i class="bi bi-clipboard-data me-2"></i>Inventario
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Recurso" asp-action="Index">
+                                        <i class="bi bi-list-check me-2"></i>Recursos
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-success" asp-controller="Inventario" asp-action="Index">📦 Inventario</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="beneficiariesDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-people me-1"></i>Beneficiarios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="beneficiariesDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Beneficiarios" asp-action="Index">
+                                        <i class="bi bi-person-lines-fill me-2"></i>Beneficiarios
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Distribuciones" asp-action="Index">
+                                        <i class="bi bi-truck me-2"></i>Distribuciones
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Incidencias" asp-action="Index">
+                                        <i class="bi bi-exclamation-triangle me-2"></i>Incidencias
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Comunicaciones" asp-action="Index">
+                                        <i class="bi bi-megaphone me-2"></i>Comunicaciones
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-info" asp-controller="Recurso" asp-action="Index">📋 Recurso</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="supportDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-heart me-1"></i>Apoyos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="supportDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Voluntarios" asp-action="Index">
+                                        <i class="bi bi-person-badge me-2"></i>Voluntarios
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Donantes" asp-action="Index">
+                                        <i class="bi bi-gift me-2"></i>Donantes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Donaciones" asp-action="Index">
+                                        <i class="bi bi-cash-coin me-2"></i>Donaciones
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="btn btn-outline-warning text-dark" asp-controller="Beneficiarios" asp-action="Index">👥 Beneficiarios</a>
+                            <a class="nav-link" asp-controller="Proyectos" asp-action="Index">
+                                <i class="bi bi-kanban me-1"></i>Proyectos
+                            </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="btn btn-outline-warning text-dark" asp-controller="Distribuciones" asp-action="Index">🚚 Distribuciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-warning text-dark" asp-controller="Incidencias" asp-action="Index">⚠️ Incidencias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-warning text-dark" asp-controller="Comunicaciones" asp-action="Index">📣 Comunicaciones</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="btn btn-outline-info text-dark" asp-controller="Voluntarios" asp-action="Index">🤝 Voluntarios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-info text-dark" asp-controller="Donantes" asp-action="Index">🎁 Donantes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-info text-dark" asp-controller="Donaciones" asp-action="Index">💸 Donaciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-info text-dark" asp-controller="Proyectos" asp-action="Index">📋 Proyectos</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Privacy">
+                                <i class="bi bi-shield-lock me-1"></i>Privacidad
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
 
-    <div class="container mt-4">
+    <div class="container-main">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted mt-5">
-        <div class="container text-center">
-            &copy; 2025 - ProyectoONG - <a asp-controller="Home" asp-action="Privacy">Privacidad</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    &copy; 2025 - ProyectoONG - Trabajando por un mundo mejor
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a asp-controller="Home" asp-action="Privacy" class="text-white-50">Política de Privacidad</a> |
+                    <a href="#" class="text-white-50">Contacto</a> |
+                    <a href="#" class="text-white-50">Términos de Servicio</a>
+                </div>
+            </div>
         </div>
     </footer>
 

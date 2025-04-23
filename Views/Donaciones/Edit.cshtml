@@ -4,46 +4,111 @@
     ViewData["Title"] = "Editar Donación";
 }
 
-<h2>Editar Donación</h2>
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h3 class="card-title mb-0">
+                <i class="bi bi-pencil-square me-2"></i>@ViewData["Title"]
+            </h3>
+        </div>
 
-<form asp-action="Edit" method="post">
-   
-    <input type="hidden" asp-for="Id" />
+        <div class="card-body">
+            <form asp-action="Edit" asp-route-id="@Model.Id" method="post">
+                @Html.AntiForgeryToken()
 
-    <div class="form-group">
-        <label asp-for="DonanteId">Seleccione Donante</label>
-        @Html.DropDownListFor(model => model.DonanteId, Model.DonantesList, "Seleccione un donante", new { @class = "form-control" })
-        <span asp-validation-for="DonanteId" class="text-danger"></span>
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="DonanteId" />
+
+                <!-- Sección de información del donante (solo lectura) -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label fw-bold">Donante</label>
+                            <input type="text" class="form-control bg-light" value="@ViewBag.DonanteNombre" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label fw-bold">Teléfono del Donante</label>
+                            <input type="text" class="form-control bg-light" value="@Model.ContactoTelefono" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campos editables de la donación -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="FechaDonacion" class="form-label fw-bold">Fecha de Donación</label>
+                            <input asp-for="FechaDonacion" class="form-control" type="date" />
+                            <span asp-validation-for="FechaDonacion" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Tipo" class="form-label fw-bold">Tipo de Donación</label>
+                            <select asp-for="Tipo" class="form-select">
+                                <option value="Monetaria">Monetaria</option>
+                                <option value="Insumos">Insumos</option>
+                                <option value="Servicios">Servicios</option>
+                                <option value="Especie">En especie</option>
+                            </select>
+                            <span asp-validation-for="Tipo" class="text-danger small"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Detalle" class="form-label fw-bold">Detalle</label>
+                    <textarea asp-for="Detalle" class="form-control" rows="3"></textarea>
+                    <small class="form-text text-muted">Incluya el monto (ej. $100) o descripción detallada</small>
+                    <span asp-validation-for="Detalle" class="text-danger small"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label asp-for="Estado" class="form-label fw-bold">Estado</label>
+                    <select asp-for="Estado" class="form-select">
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="Recibida">Recibida</option>
+                        <option value="En proceso">En proceso</option>
+                        <option value="Rechazada">Rechazada</option>
+                        <option value="Distribuida">Distribuida</option>
+                    </select>
+                    <span asp-validation-for="Estado" class="text-danger small"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left me-1"></i> Volver al listado
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i> Guardar Cambios
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div class="form-group">
-        <label asp-for="FechaDonacion">Fecha de Donación</label>
-        <input asp-for="FechaDonacion" class="form-control" type="date" />
-        <span asp-validation-for="FechaDonacion" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Tipo">Tipo (monetaria, insumos, etc.)</label>
-        <input asp-for="Tipo" class="form-control" />
-        <span asp-validation-for="Tipo" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Detalle">Detalle</label>
-        <input asp-for="Detalle" class="form-control" />
-        <span asp-validation-for="Detalle" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Estado">Estado (pendiente, recibida, en tránsito, etc.)</label>
-        <input asp-for="Estado" class="form-control" />
-        <span asp-validation-for="Estado" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-</form>
+</div>
 
 @section Scripts {
-    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Inicializar selects con los valores actuales
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleccionar la opción correcta en los dropdowns
+            const tipoSelect = document.getElementById('Tipo');
+            if (tipoSelect) {
+                tipoSelect.value = '@Model.Tipo';
+            }
+
+            const estadoSelect = document.getElementById('Estado');
+            if (estadoSelect) {
+                estadoSelect.value = '@Model.Estado';
+            }
+        });
+    </script>
 }

@@ -2,42 +2,77 @@
     ViewData["Title"] = "Bienvenido a ProyectoONG";
 }
 
-<div class="text-center mt-5">
-    <h1 class="display-4 fw-bold text-primary">Bienvenido a ProyectoONG</h1>
-    <p class="lead">Gestiona fácilmente tus recursos e inventario con esta plataforma web intuitiva.</p>
-    <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
-        <a class="btn btn-lg btn-primary shadow d-flex align-items-center gap-2" asp-controller="Inventario" asp-action="Index">
-            📦 Ir a Inventario
-        </a>
-        <a class="btn btn-lg btn-success shadow d-flex align-items-center gap-2" asp-controller="Recurso" asp-action="Index">
-            📝 Ver Recursos
-        </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Usuario" asp-action="Index">
-            👥 Administrar Usuarios
-        </a>
-        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Voluntarios" asp-action="Index">
-            🤝 Voluntarios
-        </a>
-        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Donantes" asp-action="Index">
-            🎁 Donantes
-        </a>
-        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Donaciones" asp-action="Index">
-            💸 Donaciones
-        </a>
-        <a class="btn btn-lg btn-info shadow d-flex align-items-center gap-2 text-white" asp-controller="Proyectos" asp-action="Index">
-            📋 Proyectos
-        </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Beneficiarios" asp-action="Index">
-            🏘 Beneficiarios
-        </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Incidencias" asp-action="Index">
-            🚧 Incidencias
-        </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Comunicaciones" asp-action="Index">
-            📣 Comunicaciones
-        </a>
-        <a class="btn btn-lg btn-warning shadow d-flex align-items-center gap-2 text-dark" asp-controller="Distribuciones" asp-action="Index">
-            🚚 Distribuciones
-        </a>
-    </div>
+<div class="welcome-page">
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="hero-title">Bienvenido a <span>ProyectoONG</span></h1>
+            <p class="hero-subtitle">Plataforma integral para la gestión de recursos, beneficiarios y proyectos sociales</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">+250</div>
+                    <div class="stat-label">Beneficiarios</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1,200</div>
+                    <div class="stat-label">Recursos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">85</div>
+                    <div class="stat-label">Voluntarios</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access">
+        <div class="container">
+            <h2 class="section-title">Accesos Rápidos</h2>
+            <p class="section-description">Selecciona el módulo que deseas gestionar</p>
+
+            <div class="access-grid">
+                <!-- Inventario -->
+                <div class="access-card card-inventory">
+                    <div class="card-icon">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <h3 class="card-title">Inventario</h3>
+                    <p class="card-description">Gestiona los recursos disponibles</p>
+                    <a asp-controller="Inventario" asp-action="Index" class="btn btn-access">Acceder</a>
+                </div>
+
+                <!-- Recursos -->
+                <div class="access-card card-resources">
+                    <div class="card-icon">
+                        <i class="bi bi-list-check"></i>
+                    </div>
+                    <h3 class="card-title">Recursos</h3>
+                    <p class="card-description">Administra el catálogo completo</p>
+                    <a asp-controller="Recurso" asp-action="Index" class="btn btn-access">Acceder</a>
+                </div>
+
+                <!-- Beneficiarios -->
+                <div class="access-card card-beneficiaries">
+                    <div class="card-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h3 class="card-title">Beneficiarios</h3>
+                    <p class="card-description">Administra personas beneficiadas</p>
+                    <a asp-controller="Beneficiarios" asp-action="Index" class="btn btn-access">Acceder</a>
+                </div>
+
+                <!-- Voluntarios -->
+                <div class="access-card card-volunteers">
+                    <div class="card-icon">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+                    <h3 class="card-title">Voluntarios</h3>
+                    <p class="card-description">Gestión de colaboradores</p>
+                    <a asp-controller="Voluntarios" asp-action="Index" class="btn btn-access">Acceder</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

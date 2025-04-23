@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vt2fdMjuYi8blmRwB55EYcsYNvITlt88djLGXrTyT/Y=",
+  "Hash": "yHdmsa2z/aLwfuq1RuPDr6Jyq3UabpylVy+lIdMxfU8=",
   "Source": "ProyectoONG",
   "BasePath": "_content/ProyectoONG",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-8gnxhs8qgz.gz",
       "SourceId": "ProyectoONG",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ProyectoONG",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=8gnxhs8qgz}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "girb38rkyi",
+      "Integrity": "+Oz37Ehev1mEHwEItQkTbq4qpnzazSWpgkofEp4LPKs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "8gnxhs8qgz",
+      "Integrity": "CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-b9sayid5wm.gz",
+      "Route": "css/site.8gnxhs8qgz.css",
+      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-8gnxhs8qgz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.000321440051"
         }
       ],
       "ResponseHeaders": [
@@ -2744,15 +2744,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "3110"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"+Oz37Ehev1mEHwEItQkTbq4qpnzazSWpgkofEp4LPKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:15:44 GMT"
+          "Value": "Wed, 23 Apr 2025 21:07:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,13 +2772,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "8gnxhs8qgz"
         },
         {
           "Name": "label",
@@ -2786,12 +2786,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.8gnxhs8qgz.css",
       "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2801,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "13969"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2809,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:15:44 GMT"
+          "Value": "Wed, 23 Apr 2025 21:07:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2823,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "8gnxhs8qgz"
         },
         {
           "Name": "label",
@@ -2831,13 +2831,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-b9sayid5wm.gz",
+      "Route": "css/site.8gnxhs8qgz.css.gz",
+      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-8gnxhs8qgz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "3110"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2854,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"+Oz37Ehev1mEHwEItQkTbq4qpnzazSWpgkofEp4LPKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:15:44 GMT"
+          "Value": "Wed, 23 Apr 2025 21:07:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +2876,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "8gnxhs8qgz"
         },
         {
           "Name": "label",
@@ -2884,18 +2884,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-+Oz37Ehev1mEHwEItQkTbq4qpnzazSWpgkofEp4LPKs="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-8gnxhs8qgz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.000321440051"
         }
       ],
       "ResponseHeaders": [
@@ -2905,15 +2905,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "3110"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"+Oz37Ehev1mEHwEItQkTbq4qpnzazSWpgkofEp4LPKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:15:44 GMT"
+          "Value": "Wed, 23 Apr 2025 21:07:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2933,13 +2933,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII="
         }
       ]
     },
@@ -2954,7 +2954,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "13969"
         },
         {
           "Name": "Content-Type",
@@ -2962,11 +2962,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:15:44 GMT"
+          "Value": "Wed, 23 Apr 2025 21:07:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2976,13 +2976,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-CGpDtJTUCvarCMCAlkSTvnjJ7xbACsWaTlv0ZB6ZCII="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\fabar\\ProyectoONGDBNoSQL\\obj\\Debug\\net9.0\\compressed\\01fktepvwf-8gnxhs8qgz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2991,7 +2991,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "3110"
         },
         {
           "Name": "Content-Type",
@@ -2999,11 +2999,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"+Oz37Ehev1mEHwEItQkTbq4qpnzazSWpgkofEp4LPKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:15:44 GMT"
+          "Value": "Wed, 23 Apr 2025 21:07:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3021,7 +3021,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-+Oz37Ehev1mEHwEItQkTbq4qpnzazSWpgkofEp4LPKs="
         }
       ]
     },
